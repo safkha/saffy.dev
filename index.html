@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safeer Khan — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#about" class="nav-logo">Safeer Khan</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#photography">Photography</a></li>
+        </ul>
+        <div class="nav-social">
+          <a href="#" class="social-icon" aria-label="GitHub">
+            <span class="icon icon-github icon-md"></span>
+          </a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <span class="icon icon-linkedin icon-md"></span>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter / X">
+            <span class="icon icon-twitter icon-md"></span>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <span class="icon icon-instagram icon-md"></span>
+          </a>
+        </div>
+        <button
+          class="nav-hamburger"
+          id="navHamburger"
+          aria-label="Toggle menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+        <li>
+          <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+        </li>
+        <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
+        <li><a href="#blog" onclick="closeMobileMenu()">Blog</a></li>
+        <li>
+          <a href="#photography" onclick="closeMobileMenu()">Photography</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ HERO / ABOUT ============ -->
+    <section class="section section-hero" id="about">
+      <div class="container">
+        <div class="hero-layout">
+          <div class="hero-text">
+            <span class="hero-greeting">Hello, I'm</span>
+            <h1 class="hero-name">Safeer Khan</h1>
+            <p class="hero-tagline">Software Engineer &amp; Photographer</p>
+            <p class="hero-bio">
+              Full-stack engineer based in Toronto with strong expertise in
+              Angular and React.js based applications. Exploring leveraging LLMs
+              to build smarter, AI-powered applications. I love to travel and
+              capture the world one picture at a time.
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="mailto:hello@yourname.com" class="btn btn-secondary"
+                >Get in Touch</a
+              >
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="avatar-frame">
+              <div class="avatar-placeholder">YN</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK EXPERIENCE ============ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Career</span>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">May 2021 — Present</span>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-role">Software Engineer</h3>
+                <p class="timeline-company">CRA · Full-time</p>
+                <p class="timeline-desc">
+                  Currently working across multiple teams and projects to
+                  spearhead efforts to modernize and maintain legacy systems for
+                  the Canada Revenue Agency. Modernized mainframe applications
+                  using Angular and Java, improving performance and user
+                  experience for the CRA's online services MyAccount.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Angular</span>
+                  <span class="tag">Java</span>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">COBOL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Dec - May 2021</span>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-role">Full Stack Developer</h3>
+                <p class="timeline-company">QuadFi · Contract Full-time</p>
+                <p class="timeline-desc">
+                  Built and maintained customer-facing functionality for QuadFi
+                  Financial Loan System. Created a react based web application
+                  that allows users to apply for loans, view their loan status,
+                  and manage their accounts. Integration with third-party
+                  services to connect financial institutions for better seamless
+                  user experiences.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">React JS</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">MongoDB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BLOG ============ -->
+    <section class="section section-alt" id="blog">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Writing</span>
+          <h2 class="section-title">Blog</h2>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div
+              class="blog-image"
+              style="
+                background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+              "
+            ></div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span class="blog-date">March 28, 2026</span>
+                <span class="blog-category">Technology</span>
+              </div>
+              <h3 class="blog-title">LLM and the future of software development.</h3>
+              <p class="blog-excerpt">
+                Exploring the latest trends and technologies shaping how we
+                build for the web. From AI-assisted coding to edge computing,
+                here's what matters.
+              </p>
+              <a href="#" class="blog-read-more">Read article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div
+              class="blog-image"
+              style="
+                background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+              "
+            ></div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span class="blog-date">February 14, 2025</span>
+                <span class="blog-category">Design</span>
+              </div>
+              <h3 class="blog-title">Travelling Italy all alone, my first Solo Adventure!</h3>
+              <p class="blog-excerpt">
+                Two weeks, four cities, one backpack. What really happens when
+                you trade the group chat for a solo ticket and figure it out as
+                you go.
+              </p>
+              <a href="blog/italy-solo-adventure.html" class="blog-read-more">Read article →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Work</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+              "
+            ></div>
+            <div class="project-body">
+              <h3 class="project-title">Project One</h3>
+              <p class="project-desc">
+                A full-stack web application that solves [problem]. Built with
+                modern tools and deployed to production serving [X] users.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <span class="icon icon-github icon-sm"></span>
+                  GitHub
+                </a>
+                <a href="#" class="project-link">
+                  <span class="icon icon-external icon-sm"></span>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="
+                background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+              "
+            ></div>
+            <div class="project-body">
+              <h3 class="project-title">Project Two</h3>
+              <p class="project-desc">
+                An open-source tool that [does something useful]. Used by
+                developers worldwide to [benefit]. Featured on [platform or
+                site].
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Docker</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <span class="icon icon-github icon-sm"></span>
+                  GitHub
+                </a>
+                <a href="#" class="project-link">
+                  <span class="icon icon-external icon-sm"></span>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="
+                background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+              "
+            ></div>
+            <div class="project-body">
+              <h3 class="project-title">Project Three</h3>
+              <p class="project-desc">
+                A mobile-first application designed to help users [accomplish
+                goal]. Achieved [metric] within first month of launch.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Swift</span>
+                <span class="tag">SwiftUI</span>
+                <span class="tag">Firebase</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <span class="icon icon-github icon-sm"></span>
+                  GitHub
+                </a>
+                <a href="#" class="project-link">
+                  <span class="icon icon-external icon-sm"></span>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-left">
+            <span class="footer-name">Safeer Khan</span>
+            <p class="footer-tagline">
+              Building things &amp; capturing moments.
+            </p>
+          </div>
+          <div class="footer-right">
+            <nav class="footer-nav" aria-label="Footer navigation">
+              <a href="#about">About</a>
+              <a href="#experience">Experience</a>
+              <a href="#projects">Projects</a>
+              <a href="#blog">Blog</a>
+              <a href="#photography">Photography</a>
+            </nav>
+            <div class="footer-social">
+              <a href="#" aria-label="GitHub">
+                <span class="icon icon-github icon-md"></span>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <span class="icon icon-linkedin icon-md"></span>
+              </a>
+              <a href="#" aria-label="Twitter / X">
+                <span class="icon icon-twitter icon-md"></span>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <span class="icon icon-instagram icon-md"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 Safeer Khan. Built with care.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Nav background on scroll
+      const nav = document.getElementById("nav");
+      window.addEventListener("scroll", () => {
+        nav.classList.toggle("nav-scrolled", window.scrollY > 20);
+      });
+
+      // Mobile menu toggle
+      const hamburger = document.getElementById("navHamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        mobileMenu.classList.toggle("open");
+      });
+      function closeMobileMenu() {
+        hamburger.classList.remove("active");
+        mobileMenu.classList.remove("open");
+      }
+
+      // Active nav link on scroll
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-links a");
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((s) => {
+          if (window.scrollY >= s.offsetTop - 100) current = s.id;
+        });
+        navLinks.forEach((link) => {
+          link.classList.toggle(
+            "active",
+            link.getAttribute("href") === "#" + current,
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
